@@ -1,0 +1,143 @@
+/* Reset básico para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dfca26;
+}
+
+/* Estilos del contenedor principal que envuelve todo el contenido */
+.contenedor-principal {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fde42d;
+}
+
+/* Estilos de la cabecera, incluyendo el campo de búsqueda */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos del input dentro del contenedor de input */
+.contenedor-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la lista de tarjetas de Pokémon */
+.lista-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos base para cada tarjeta individual de Pokémon */
+.card {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+/* Efecto al pasar el ratón sobre las tarjetas */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos del contenedor de la imagen dentro de la tarjeta */
+.contenedor-img {
+    background-color: #ccc;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+/* Estilos para la imagen del Pokémon dentro de la tarjeta */
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilos para el contenedor del ID del Pokémon */
+.contenedor-id {
+    width: 45px;
+    background-color: #a9a7a7;
+    padding: 3px;
+}
+
+/* Estilos para el texto del ID del Pokémon */
+.pokemon-id {
+    font-size: 0.8rem;
+    color: #844e24;
+}
+
+/* Estilos para el contenedor de información del Pokémon */
+.pokemon-info {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para el nombre del Pokémon */
+.pokemon-info h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los poderes del Pokémon */
+.pokemon-poderes span {
+    border: solid 1px #60381a75;
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #844e24;
+}
+
+/* Estilos para la sección de evolución del Pokémon */
+.evolucion {
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #844e24;
+    padding-left: 4px;
+    margin: 5px 0;
+}
+
+/* Estilos para el texto de 'Evolución de:' */
+.pokemon-evolution {
+    color: #844e24;
+    font-size: 0.8rem;
+}
+
+/* Estilos para el nombre del Pokémon anterior en la evolución */
+.pokemon-evolution-a {
+    color: #333;
+    font-size: 1rem;
+}
